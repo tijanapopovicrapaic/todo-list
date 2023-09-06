@@ -1,0 +1,134 @@
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: beige;
+  margin-top: 5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+  h1 {
+    color: chocolate;
+    font-size: 50px;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+  }
+
+  input[type="text"] {
+    flex: 1;
+    width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid chocolate;
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+
+  button {
+    padding: 4px 9px !important;
+    font-size: 25px  ;
+    line-height: 1;
+    font-size: bold ;
+    background-color: chocolate !important;
+    color: beige;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: -50px;
+    transition: 0.3s ease; 
+  }
+  
+  button:hover{
+    background-color: #8B4513 !important;
+  }
+
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+ 
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid chocolate;
+    background-color: beige;
+    color: chocolate;
+    list-style-type: none;
+    font-weight: bold;
+    position: relative;
+    width: 80%;  
+  }
+
+  .todo-item.completed {
+    text-decoration: line-through;
+    background-color: darkgray !important;
+    color: #fff !important;
+  }
+
+  .todo-item:hover{
+    background-color: antiquewhite;
+  }
+
+  .todo-item:nth-child(odd){
+    background-color: antiquewhite;
+  }
+  
+  .todo-item span {
+    flex: 1;
+    font-size: 18px;
+    text-align: left;
+    margin-right: 10px;
+  }
+  
+  .todo-item button {
+    background-color: transparent !important;
+    border: solid 1px chocolate;
+    color: chocolate !important;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 3px 9px;
+    
+  }
+
+ 
+.edit-button {
+  background-color: transparent !important;
+  border: solid 1px chocolate;
+  color: chocolate !important;
+  padding: 3px 9px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 70px;
+  
+}
+
+.save-button-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-end; 
+  
+  
+}
+
+.save-button {
+  background-color: transparent !important;
+  border: solid 1px chocolate !important;
+  color: chocolate !important;
+  padding: 3px 9px !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  transition: 0.3s ease;
+  margin-left: 50px;
+  
+}
+
+.input-search {
+  width: 130px !important; 
+}
+
+
